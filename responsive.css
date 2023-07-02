@@ -1,0 +1,120 @@
+@media (min-width:991px) {
+    .dropdown .dropdown-menu{
+        display: none;
+      }
+    .dropdown:hover > .dropdown-menu,.dropend:hover > .dropdown-menu{
+     display: block;
+     border: none;
+     /* transform: translateY(-2.1rem); */
+    }
+    .dropend:hover > .dropdown-menu{ 
+         margin-left:150px;
+          margin-top:-30px
+        }
+  
+}
+@media screen and (max-width:991px){
+    .modal-backdrop{
+        z-index:unset;
+    }
+    .res-icon:hover{
+        transform: rotate(180deg);
+    }
+    .dropend:hover .dropdown-menu{ 
+        margin-left:20px;
+        margin-top:4px;
+        display:block; 
+    } 
+    .dropdown .dropdown-menu, .dropend .dropdown-menu{
+        margin-top:auto;
+        border:none; 
+    } 
+     .dropdown-menu .nav-link{
+         margin-left:8px;
+     }
+    .res-icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 30px;
+        height: 30px;    
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid #f8f9fa;
+    }
+    .res-btn{
+        border:none;
+        background-color:white;
+        color: lch(0 0 0 / 0.65);
+        display:block;
+        margin-bottom:10px;
+    }
+    .button-sec .button{
+        padding-left:10px;
+        padding-bottom:1px;
+    }
+    .button-sec .btn{
+        text-align:start;
+        padding-left:10px
+    }
+    .button-sec .btn:hover{
+        background-color:unset;
+        color:#407BFF;
+    }
+    .button-sec .button:hover{
+        background-color:unset;
+        color:#407BFF;
+        border: unset;
+    }
+    .res-ul .home{color: #407BFF;}
+    .res-ul li a:hover{
+        color:#407BFF;
+    }
+    .img-sec,.para-sec{
+        width: 100%;
+    }
+    .para-sec{
+        text-align: center;
+    }
+    .btn-sec{
+        margin-left:200px;
+    }
+    .heading-sec{
+       font-size: 50px;
+    }
+    .btn-icon{
+    position: absolute;
+    top: 1735px;
+    left: 47%;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
+}
+.icon-1,.icon-2,.icon-3,.icon-4{
+    width: 50px;
+}
+.col{
+    width: 100%;
+}
+.sec-btn{
+    margin-left:100px;
+}
+    .card-box{
+        margin-bottom:30px
+    }
+
+    .Testimonials-sec{
+        text-align: center;
+    }
+    .Testimonials-sec .d-flex{
+        margin-left: 290px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .icon-1,.icon-2,.icon-3,.icon-4{
+        width: 68px;
+    }
+}
