@@ -1,4 +1,35 @@
+              // header//
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+function navHighlighter() {
+    let scrollY = window.pageYOffset;
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute("id");
 
+        if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+          ){
+            document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("active");
+          } else {
+            document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("active");
+          }
+        });
+      }
+      
+
+
+              // hero-section#3 carousel//
+
+
+function toggleCss(btn){
+    document.querySelector(".carousel button.active").classList.remove("active")
+    btn.classList.add("active")
+}
+
+// hero-sec#7 slider/
 var slider = document.getElementById('slider');
 var dot1 = document.getElementById('dot1');
 var dot2 = document.getElementById('dot2');
